@@ -1,0 +1,600 @@
+/* Start with the tokens from the Figma variables. */
+:root {
+    --pine: #183D2F;
+    --pine-2: #20493A;
+    --moss: #2F6B4F;
+    --sun: #F2B544;
+    --sand: #FCEFD0;
+    --sand-text: #7A5410;
+    --paper: #F6F4EE;
+    --white: #FFFFFF;
+    --stone: #5B6660;
+    --ink: #3E4A44;
+    --on-dark: #D7E2DB;
+    --line: #C3CDC5;
+    --mist: #DDE3DC;
+    --sky: #3D7A8C;
+    --forest: #7A8C3D;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    background: var(--paper);
+    font-family: 'DM Sans', sans-serif;
+}
+
+a {
+    color: var(--pine);
+    text-decoration: none;
+}
+
+.header {
+    background: var(--white);
+    border: 1px solid var(--mist);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding: 16px 72px;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.logo {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.links a {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.button {
+    display: inline-flex;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.button-primary {
+    background-color: var(--moss);
+    color: var(--white);
+}
+
+.button-secondary {
+    padding: 11px 19px;
+    border: 1px solid var(--line);
+    background-color: var(--white);
+    color: var(--pine);
+}
+
+#hero {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    align-items: center;
+    background-color: var(--paper);
+    border: 1px solid var(--mist);
+    border-radius: 16px;
+    padding: 96px 72px;
+}
+
+.copy {
+    display: flex;
+    flex: 0 1 544px;
+    min-width: 0;
+    flex-direction: column;
+}
+
+.title-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.badge {
+    margin-bottom: 20px;
+    background-color: var(--sand);
+    color: var(--sand-text);
+    font-size: 12px;
+    line-height: 16px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+.title {
+    margin: 0;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -0.03em;
+    color: var(--pine);
+}
+
+.intro {
+    color: var(--ink);
+    max-width: 544px;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 28px;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0em;
+}
+
+.actions {
+    display: flex;
+    gap: 16px;
+}
+
+.hero-image {
+    position: relative;
+    flex: 1 1 0;
+    min-width: 320px;
+    height: 400px;
+    margin: 0;
+    border-radius: 24px;
+    background-color: var(--moss);
+    overflow: hidden;
+}
+
+.sun {
+    position: absolute;
+    top: 48px;
+    right: 48px;
+    width: 56px;
+    height: 56px;
+    background-color: var(--sun);
+    border-radius: 50%;
+}
+
+.frame {
+    position: absolute;
+    inset: 0;
+}
+
+#vector-1,
+#vector-2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+#how {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 64px;
+}
+
+#how h2 {
+    margin: 0;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+    border-radius: 16px;
+    background-color: var(--paper);
+}
+
+.step h3,
+.step p {
+    margin: 0;
+}
+
+.step h3 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.step p {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--ink);
+}
+
+.number {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    background-color: var(--sun);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#hikes {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 64px 72px;
+    border: 1px solid var(--mist);
+    overflow: hidden;
+}
+
+.hikes-heading {
+    font-size: 32px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: var(--pine);
+}
+
+.article-container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin: 0;
+}
+
+.card {
+    width: 363px;
+    border: 1px solid var(--mist);
+    border-radius: 16px;
+    background-color: var(--white);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card-image {
+    position: relative;
+    height: 160px;
+}
+
+.card-image-1 {
+    background-color: var(--moss);
+}
+
+.card-image-2 {
+    background-color: var(--sky);
+}
+
+.card-image-3 {
+    background-color: var(--forest);
+}
+
+.card-illustration {
+    position: absolute;
+    height: 110px;
+    top: 50px;
+}
+
+#sun {
+    position: absolute;
+    top: 16px;
+    left: 269.98px;
+}
+
+.vector-1 {
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+}
+
+.vector-2 {
+    position: absolute;
+    top: 15px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
+}
+
+.badge {
+    background-color: var(--sand);
+    color: var(--sand-text);
+    font-size: 12px;
+    line-height: 16px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+.card-title {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--pine);
+    margin: 0;
+}
+
+.card-details {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--stone);
+    margin: 0;
+}
+
+#pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 64px 72px;
+    background-color: var(--pine);
+}
+
+.pricing-heading {
+    margin: 0;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: bold;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: var(--white);
+}
+
+.article-container {
+    margin: 0;
+}
+
+.plan {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 32px;
+    border-radius: 16px;
+}
+
+.plan h3,
+.plan p {
+    margin: 0;
+}
+
+.plan-dark {
+    background-color: var(--pine-2);
+    color: var(--white);
+}
+
+.plan-light {
+    background-color: var(--paper);
+    color: var(--pine);
+}
+
+.price {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.price span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--stone);
+}
+
+.plan-dark .desc {
+    color: var(--on-dark);
+}
+
+.plan-light .desc {
+    color: var(--ink);
+}
+
+#join {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 72px;
+    border: 1px solid var(--mist);
+}
+
+.join-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 24px;
+    justify-content: space-between;
+    padding: 48px;
+    gap: 24px;
+    background-color: var(--sun);
+}
+
+.join-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.join-card-heading {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: var(--pine);
+    margin: 0;
+}
+
+.join-card-body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0;
+    color: var(--pine);
+}
+
+.button-dark {
+    width: 140px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    background-color: var(--pine);
+}
+
+.button-text {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-style: semibold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: var(--white);
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid var(--mist);
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 72px;
+    gap: 12px;
+}
+
+.copyright,
+.privacy,
+.contact {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: var(--stone);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .button {
+        width: 90%;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    #hero {
+        flex-direction: column;
+        padding: 48px 24px;
+        gap: 24px;
+        width: 390px;
+        height: 744px;
+    }
+
+    .actions {
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    #how {
+        gap: 24px;
+        padding: 24px;
+    }
+
+    #how h2 {
+        font-size: 28px;
+        line-height: 36px;
+        padding: 24px;
+    }
+
+    .step h3 {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .article-container {
+        flex-direction: column;
+    }
+
+    #pricing {
+        padding: 48px 24px;
+        gap: 24px;
+    }
+
+    #join {
+        padding: 48px 24px;
+    }
+
+    .join-card {
+        flex-direction: column;
+        padding: 32px;
+        gap: 16px;
+        border-radius: 16px;
+        align-items: flex-start;
+    }
+
+    .button-dark {
+        width: 100%;
+    }
+
+    #footer {
+        flex-direction: column;
+        padding: 24px;
+        align-items: flex-start;
+    }
+
+    .copyright {
+        width: 90%;
+    }
+}

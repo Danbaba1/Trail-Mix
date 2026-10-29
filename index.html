@@ -1,0 +1,201 @@
+<html>
+
+<head>
+</head>
+<meta charset="utf-8">
+<meta name="description" content="width=viewport-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=DM+Sans:wght@400;500;600;700&display=swap">
+</head>
+<!-- Build the Trailmix landing page: header, #hero, #how, #hikes, #pricing, #join and footer. -->
+<header class="header">
+    <a class="logo" href="#">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2F6B4F" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="m3 20 6-10 4 6 3-4 5 8z"></path>
+        </svg>
+        Trailmix
+    </a>
+    <div class="links">
+        <a href="#hikes">Hikes</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#log-in">Log In</a>
+    </div>
+    <a class="button button-primary" href="join">Join the club</a>
+</header>
+<main id="hero">
+    <section class="copy">
+        <div class="title-group">
+            <span class="badge">Weekend hiking club</span>
+            <h1 class="title">Weekend hikes, planned for you.</h1>
+        </div>
+        <p class="intro">Pick a route, join a small group and meet at the trailhead. We handle the planning, so you can
+            just walk.</p>
+        <div class="actions">
+            <a class="button button-primary" href="#hikes">
+                <svg width="20" height="20" aria-hidden="true" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="2" />
+                </svg>
+                Find a hike
+            </a>
+            <a class="button button-secondary" href="#how">How it works</a>
+        </div>
+    </section>
+    <section class="hero-image">
+        <div class="sun"></div>
+        <div class="frame">
+            <svg id="vector-1" xmlns="http://www.w3.org/2000/svg" width="544" height="260" viewBox="0 0 544 260"
+                fill="none">
+                <path d="M0 260L116.571 70L194.286 160L301.143 0L417.714 190L485.714 110L544 180V260H0Z" fill="#245A42">
+                </path>
+            </svg>
+            <svg id="vector-2" xmlns="http://www.w3.org/2000/svg" width="544" height="130" viewBox="0 0 544 130"
+                fill="none">
+                <path d="M0 130L97.1429 30L204 100L320.571 0L437.143 110L544 60V130H0Z" fill="#1E4C38"></path>
+            </svg>
+        </div>
+    </section>
+</main>
+<section id="how">
+    <h2>How it works</h2>
+    <div class="steps">
+        <article class="step">
+            <span class="number">1</span>
+            <h3>Pick a hike</h3>
+            <p>Browse weekend routes near you, sorted by distance and difficulty.</p>
+        </article>
+        <article class="step">
+            <span class="number">2</span>
+            <h3>Join a group</h3>
+            <p>Hike with a small group and a leader who knows the trail.</p>
+        </article>
+        <article class="step">
+            <span class="number">3</span>
+            <h3>Meet at the start</h3>
+            <p>Get the meeting point, kit list and weather the night before.</p>
+        </article>
+    </div>
+</section>
+<section id="hikes">
+    <h2 class="hikes-heading">This weekend's hikes</h2>
+    <div class="article-container">
+        <article class="card">
+            <div class="card-image card-image-1">
+                <div class="card-illustration">
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="28" height="24" viewBox="0 0 28 24"
+                        fill="none">
+                        <path
+                            d="M13.6125 24C21.1305 24 27.225 18.6274 27.225 12C27.225 5.37258 21.1305 0 13.6125 0C6.09452 0 0 5.37258 0 12C0 18.6274 6.09452 24 13.6125 24Z"
+                            fill="#F2B544"></path>
+                    </svg>
+                    <svg class="vector-1" xmlns="http://www.w3.org/2000/svg" width="361" height="50"
+                        viewBox="0 0 361 50" fill="none">
+                        <path d="M0 50L68.0625 10L136.125 40L215.531 0L294.938 45L363 20V50H0Z" fill="#1E4C38"></path>
+                    </svg>
+                    <svg class="vector-2" xmlns="http://www.w3.org/2000/svg" width="361" height="95"
+                        viewBox="0 0 361 95" fill="none">
+                        <path d="M0 95L79.4062 25L124.781 60L192.844 0L272.25 70L317.625 40L363 75V95H0Z"
+                            fill="#245A42"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="card-content">
+                <span class="badge">Moderate</span>
+                <h3 class="card-title">Box Hill loop</h3>
+                <p class="card-details">10 km &middot; About 4 hours &middot; Surrey</p>
+            </div>
+        </article>
+        <article class="card">
+            <div class="card-image card-image-2">
+                <div class="card-illustration">
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="28" height="24" viewBox="0 0 28 24"
+                        fill="none">
+                        <path
+                            d="M13.6125 24C21.1305 24 27.225 18.6274 27.225 12C27.225 5.37258 21.1305 0 13.6125 0C6.09452 0 0 5.37258 0 12C0 18.6274 6.09452 24 13.6125 24Z"
+                            fill="#F2B544"></path>
+                    </svg>
+                    <svg class="vector-1" xmlns="http://www.w3.org/2000/svg" width="361" height="50"
+                        viewBox="0 0 361 50" fill="none">
+                        <path d="M0 50L68.0625 10L136.125 40L215.531 0L294.938 45L363 20V50H0Z" fill="#1E4C38"></path>
+                    </svg>
+                    <svg class="vector-2" xmlns="http://www.w3.org/2000/svg" width="361" height="95"
+                        viewBox="0 0 361 95" fill="none">
+                        <path d="M0 95L79.4062 25L124.781 60L192.844 0L272.25 70L317.625 40L363 75V95H0Z"
+                            fill="#245A42"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="card-content">
+                <span class="badge">Moderate</span>
+                <h3 class="card-title">Seven Sisters cliffs</h3>
+                <p class="card-details">13 km &middot; About 5 hours &middot; East Sussex</p>
+            </div>
+        </article>
+        <article class="card">
+            <div class="card-image card-image-3">
+                <div class="card-illustration">
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="28" height="24" viewBox="0 0 28 24"
+                        fill="none">
+                        <path
+                            d="M13.6125 24C21.1305 24 27.225 18.6274 27.225 12C27.225 5.37258 21.1305 0 13.6125 0C6.09452 0 0 5.37258 0 12C0 18.6274 6.09452 24 13.6125 24Z"
+                            fill="#F2B544"></path>
+                    </svg>
+                    <svg class="vector-1" xmlns="http://www.w3.org/2000/svg" width="361" height="50"
+                        viewBox="0 0 361 50" fill="none">
+                        <path d="M0 50L68.0625 10L136.125 40L215.531 0L294.938 45L363 20V50H0Z" fill="#1E4C38"></path>
+                    </svg>
+                    <svg class="vector-2" xmlns="http://www.w3.org/2000/svg" width="361" height="95"
+                        viewBox="0 0 361 95" fill="none">
+                        <path d="M0 95L79.4062 25L124.781 60L192.844 0L272.25 70L317.625 40L363 75V95H0Z"
+                            fill="#245A42"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="card-content">
+                <span class="badge">Easy</span>
+                <h3 class="card-title">Richmond Park circuit</h3>
+                <p class="card-details">7 km &middot; About 2 hours &middot; London</p>
+            </div>
+        </article>
+    </div>
+</section>
+<section id="pricing">
+    <h2 class="pricing-heading">Pricing</h2>
+    <div class="article-container">
+        <article class="plan plan-dark">
+            <h3>Walker</h3>
+            <p class="price">Free</p>
+            <p class="desc">Join two group hikes a month and see every route.</p>
+            <a class="button button-secondary" href="#"><span class="text">Start walking</span></a>
+        </article>
+        <article class="plan plan-light">
+            <h3>Member</h3>
+            <p class="price">&pound;6 <span>/ month</span></p>
+            <p class="desc">Unlimited group hikes, early booking and offline route maps.</p>
+            <a class="button button-primary" href="#"><span class="text">Become a member</span></a>
+        </article>
+    </div>
+</section>
+<section id="join">
+    <article class="join-card">
+        <div class="join-group">
+            <h3 class="join-card-heading">Your first hike is this weekend.</h3>
+            <p class="join-card-body">Join free. You can upgrade any time.</p>
+        </div>
+        <button class="button-dark"><span class="button-text">Join the club</span></button>
+    </article>
+</section>
+<footer id="footer">
+    <p class="copyright">&copy; 2026 Trailmix. A practice design for Lumen's Design to code module</p>
+    <div class="footer-links">
+        <a href="#privacy">Privacy</a>
+        <a href="#contact">Contact</a>
+    </div>
+</footer>
+
+</html>
